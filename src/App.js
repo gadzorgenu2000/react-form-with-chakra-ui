@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Form from './Form/form';
-import { ThemeProvider, theme, ColorModeProvider, CSSReset} from '@chakra-ui/core';
+import Form from './components/form';
+import './App.css';
+
 const App =()=>{
 return (
-  <ThemeProvider theme={theme}>
-    <ColorModeProvider>
-    <CSSReset/>
+  <div className="app">
     <Form/>
-    </ColorModeProvider>    
-  </ThemeProvider>
+   </div>
 );
 }
 export default App;
